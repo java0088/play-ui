@@ -1,0 +1,22 @@
+{
+  "name": "play-ui",
+  "version": "1.0.0",
+  "description": "Vue3 UI Components Library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/java0088/play-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/java0088/play-ui/issues"
+  },
+  "homepage": "https://github.com/java0088/play-ui#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
