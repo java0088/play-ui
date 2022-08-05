@@ -116,3 +116,7 @@ module.exports = {
   }
 }
 ```
+
+### lint-staged
+
+- 安装依赖 pnpm add lint-staged -D -w
