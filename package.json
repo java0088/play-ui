@@ -19,11 +19,6 @@
     "url": "https://github.com/java0088/play-ui/issues"
   },
   "homepage": "https://github.com/java0088/play-ui#readme",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
       "pnpm lint"
@@ -33,7 +28,6 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@typescript-eslint/parser": "^5.32.0",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
