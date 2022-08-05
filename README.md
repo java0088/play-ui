@@ -133,6 +133,18 @@ pnpm add husky -D -w
 
 pnpm lint
 ```
-commitlint 查看官方文档 https://commitlint.js.org/#/guides-local-setup
+commitlint 官方文档 https://commitlint.js.org/#/guides-local-setup
 
+安装依赖
+```shell
+pnpm add @commitlint/config-conventional @commitlint/cli -D -w
+```
+
+添加钩子 .husky/commit-msg
+```shell
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx --no-install commitlint --edit $1
+```
 
