@@ -1,3 +1,3 @@
 const h = "Hello";
 
-console.log(h)
+console.log(h);
