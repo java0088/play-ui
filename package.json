@@ -20,7 +20,7 @@
   "homepage": "https://github.com/java0088/play-ui#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "pnpm lint:fix"
     }
   },
   "lint-staged": {
