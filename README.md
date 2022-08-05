@@ -117,15 +117,22 @@ module.exports = {
 }
 ```
 
-### lint-staged + husky
+### husky + commitlint
 
-- 安装依赖 pnpm add lint-staged husky -D -w
-- 执行 npx husky install 创建.husky目录，该目录下有一个pre-commit文件在每次提交代码的时候会执行，可以修改里面的运行脚本，自定义提交需要做的工作
+- husky 哈士奇，代码提交前可以执行自定义 git hooks
+- commitlint 统一提交时的message
+
+安装依赖
+```
+pnpm add husky -D -w
+```
+执行 npx husky install 创建.husky目录，该目录下有一个pre-commit文件在每次提交代码的时候会执行，可以修改里面的运行脚本，自定义提交需要做的工作
 ```shell
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# npx lint-staged
-npm run lint
+pnpm lint
 ```
+commitlint 查看官方文档 https://commitlint.js.org/#/guides-local-setup
+
 
