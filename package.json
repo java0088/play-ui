@@ -20,7 +20,7 @@
   "homepage": "https://github.com/java0088/play-ui#readme",
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "pnpm lint:fix"
+      "pnpm lint"
     ]
   },
   "devDependencies": {

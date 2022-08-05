@@ -117,6 +117,15 @@ module.exports = {
 }
 ```
 
-### lint-staged
+### lint-staged + husky
 
-- 安装依赖 pnpm add lint-staged -D -w
+- 安装依赖 pnpm add lint-staged husky -D -w
+- 执行 npx husky install 创建.husky目录，该目录下有一个pre-commit文件在每次提交代码的时候会执行，可以修改里面的运行脚本，自定义提交需要做的工作
+```shell
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# npx lint-staged
+npm run lint
+```
+
