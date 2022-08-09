@@ -1,3 +1,1 @@
-export function startup() {
-  console.log('Hello Play UI')
-}
+export * from './button'

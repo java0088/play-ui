@@ -8,8 +8,9 @@
     "strict": true,
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
-    "types": ["node"],
+    "types": ["node", "unplugin-vue-define-options"],
     "rootDir": ".",
+    "moduleResolution": "node",
     "paths": {
       "@play-ui/*": ["packages/*"]
     },

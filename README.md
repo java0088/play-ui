@@ -148,3 +148,21 @@ pnpm add @commitlint/config-conventional @commitlint/cli -D -w
 npx --no-install commitlint --edit $1
 ```
 
+## 编写组件
+
+- 组件目录结构
+
+```
+|-- button
+    |-- index.ts
+    |-- src
+    |   |-- button.ts
+    |   |-- button.vue
+    |   |-- button.scss
+    |-- __test__
+```
+
+- 项目更目录安装vue和vite依赖，安装vite依赖会有define*提示
+```
+pnpm add vue vite -D -w
+```
