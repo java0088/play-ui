@@ -6,6 +6,5 @@ export const buttonTypes = [
   'info',
   'danger',
   'text',
-  '',
+  ''
 ] as const
-

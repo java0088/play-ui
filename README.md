@@ -71,6 +71,7 @@ module.exports = {
 - 当 ESLint 的规则和 Prettier 的规则相冲突时，就会发现一个尴尬的问题，用其中一种来格式化代码，另一种就会报错。prettier 官方提供了一款工具 eslint-config-prettier 来解决这个问题，本质上这个工具其实就是禁用掉了一些不必要的以及和 Prettier 相冲突的 ESLint 规则。
 
 修改 eslintrc 文件
+
 ```js
 {
   "extends": [
@@ -83,6 +84,7 @@ module.exports = {
 - eslint-config-prettier 仅仅只是将部分 ESLint 规则给禁用了，避免 Prettier 格式化之后的代码导致 ESLint 报错而已，prettier 官方提供了一个 ESLint 插件 eslint-plugin-prettier。这个插件的主要作用就是将 prettier 作为 ESLint 的规则来使用，相当于代码不符合 Prettier 的标准时，会报一个 ESLint 错误，同时也可以通过 eslint --fix 来进行格式化。
 
 修改 eslintrc 文件
+
 ```js
 {
   "plugins": ["prettier"],
@@ -93,6 +95,7 @@ module.exports = {
 ```
 
 - .eslint.js
+
 ```js
 module.exports = {
   parser: '@typescript-eslint/parser',
@@ -112,7 +115,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    "prettier/prettier": 'error'
+    'prettier/prettier': 'error'
   }
 }
 ```
@@ -120,27 +123,33 @@ module.exports = {
 ### husky + commitlint
 
 - husky 哈士奇，代码提交前可以执行自定义 git hooks
-- commitlint 统一提交时的message
+- commitlint 统一提交时的 message
 
 安装依赖
+
 ```
 pnpm add husky -D -w
 ```
-执行 npx husky install 创建.husky目录，该目录下有一个pre-commit文件在每次提交代码的时候会执行，可以修改里面的运行脚本，自定义提交需要做的工作
+
+执行 npx husky install 创建.husky 目录，该目录下有一个 pre-commit 文件在每次提交代码的时候会执行，可以修改里面的运行脚本，自定义提交需要做的工作
+
 ```shell
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
 pnpm lint
 ```
+
 commitlint 官方文档 https://commitlint.js.org/#/guides-local-setup
 
 安装依赖
+
 ```shell
 pnpm add @commitlint/config-conventional @commitlint/cli -D -w
 ```
 
 添加钩子 .husky/commit-msg
+
 ```shell
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
@@ -162,7 +171,8 @@ npx --no-install commitlint --edit $1
     |-- __test__
 ```
 
-- 项目更目录安装vue和vite依赖，安装vite依赖会有define*提示
+- 项目更目录安装 vue 和 vite 依赖，安装 vite 依赖会有 define\*提示
+
 ```
 pnpm add vue vite -D -w
 ```

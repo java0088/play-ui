@@ -15,23 +15,19 @@ export const config: UserConfig = {
     logo: '/images/vite.svg',
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2020-PRESENT Anthony Fu and VueUse contributors',
+      copyright: 'Copyright © 2020-PRESENT Anthony Fu and VueUse contributors'
     },
     algolia: {
       apiKey: 'your_api_key',
       indexName: 'index_name'
     },
     nav: [
-      { text: "指南", link: "/guide/design" },
-      { text: "组件", link: "/component/button" },
+      { text: '指南', link: '/guide/design' },
+      { text: '组件', link: '/component/button' }
     ],
-    socialLinks: [
-      { icon: "github", link: "https://github.com/java0088" }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/java0088' }],
     sidebar: {
-      '/guide/': {
-
-      },
+      '/guide/': {},
       '/component/': [
         {
           text: 'Basic',
