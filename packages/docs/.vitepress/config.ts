@@ -3,14 +3,6 @@ import type { UserConfig } from 'vitepress'
 export const config: UserConfig = {
   title: 'Play UI',
   description: 'a Vue 3 based component library for designers and developers',
-  head: [
-    [
-      'link',
-      {
-        href: 'www.baidu.com'
-      }
-    ]
-  ],
   themeConfig: {
     logo: '/images/vite.svg',
     footer: {
