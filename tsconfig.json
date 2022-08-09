@@ -9,6 +9,9 @@
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
     "types": ["node"],
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@play-ui/*": ["packages/*"]
+    },
   }
 }
