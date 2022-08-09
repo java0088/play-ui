@@ -1,14 +1,29 @@
 ---
-home: true
-heroText: 基于element-plus二次封装组件
-tagline: 高扩展的组件库
-actionText: 快速开始
-actionLink: /
+layout: home
+
+hero:
+  name: Play UI
+  text: 
+  tagline: 基于 Vue 3，面向设计师和开发者的组件库
+  image:
+    src: /images/vite.svg
+    alt: Play UI
+  actions:
+    - theme: brand
+      text: Why Play UI
+      link: /articles/组件库环境搭建
+    - theme: alt
+      text: 快速开始
+      link: /component/button
+
 features:
-  - title: 简洁至上
-    details: 所有组件支持全量引入和按需引入
-  - title: 高扩展性
-    details: 全新的组件API设计，支持高度自定义
-  - title: 全面覆盖
-    details: 涵盖基础组件、通用组件和业务组件
+  - icon: ⚡️
+    title: 这是一个闪电图标
+    details: wawawa
+  - icon: 🖖
+    title: 这是一个手掌图标
+    details: good...
+  - icon: 🛠️
+    title: 这是一个修理图标
+    details: cocococo
 ---

@@ -15,7 +15,7 @@ export const config: UserConfig = {
     logo: '/images/vite.svg',
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2020-PRESENT Anthony Fu and VueUse contributors'
+      copyright: 'Copyright © 2022-PRESENT java0088 and Play UI contributors'
     },
     algolia: {
       apiKey: 'your_api_key',
@@ -27,7 +27,7 @@ export const config: UserConfig = {
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/java0088' }],
     sidebar: {
-      '/guide/': {},
+      '/guide/': [],
       '/component/': [
         {
           text: 'Basic',
@@ -40,17 +40,6 @@ export const config: UserConfig = {
         }
       ]
     }
-    // sidebar: [
-    //   {
-    //     text: 'Basic',
-    //     items: [
-    //       {
-    //         text: 'Button',
-    //         link: '/articles/button'
-    //       }
-    //     ]
-    //   }
-    // ]
   }
 }
 
