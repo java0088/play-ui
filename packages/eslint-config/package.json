@@ -1,0 +1,24 @@
+{
+  "name": "@play-ui/eslint-config",
+  "version": "1.0.0",
+  "description": "eslint config of play-ui",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "tslint",
+    "config",
+    "play-ui"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
